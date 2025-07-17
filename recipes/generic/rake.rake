@@ -10,3 +10,11 @@ namespace :rake do
     end
   end
 end
+
+namespace :deploy do
+  task :finished do
+    puts "Deployed your_app on #{fetch(:stage)}!"
+  end
+end
+
+after 'deploy:publishing', 'deploy:finished'
