@@ -3,7 +3,7 @@ set :repo_url, 'git@example.com:me/my_repo.git'
 
 namespace :deploy do
   task :finished do
-    puts "Deployed your_app on \\#{fetch(:stage)}!"
+    puts "Deployed your_app on \\#{fetch(:stage)}!\n"
   end
 end
 
